@@ -1,0 +1,89 @@
+/* inicio novedades */
+.novedades, .modifi-novedad, .agreg-novedad{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}  
+    .new > a{
+    background-color: #002060;
+    border: none;
+    border-radius: 6px;
+}
+.new > a:hover{
+    background-color: #002060;
+}
+.search{
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+.search:hover{
+    background-color: rgb(0, 0, 0);
+}
+.table{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.text-center > a{
+    background-color: #002060;
+}
+.text-center > a:hover{
+    background-color: black;
+}
+.saludo{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    font-weight: 700;
+}
+.modificar, .agregar{
+    background-color: #002060;
+    border:none;
+}
+.modificar:hover, .agregar:hover{
+    background-color: #002060;
+    border: none;
+}
+.mensaje{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: 500;
+}
+.btn-danger, a{
+    background-color: rgb(177, 19, 19);
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    border: none;
+    
+}
+.title-novedad{
+    font-size: 21px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: #2e64a1;
+    text-transform: uppercase;
+}
+.subtitle-novedad{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: #333;
+}
+.cuerpo-novedad{
+    color: #777777;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+/* fin novedades */

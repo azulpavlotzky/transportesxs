@@ -1,0 +1,101 @@
+/*inicio servicio*/
+
+.servicio{
+    border: 1px solid #ddd;
+    border-radius: 0.7em;
+    margin:1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.servicio figure img{
+    border-radius: 0.8em;
+    margin-top: 38px;
+    
+}
+
+.servicio .info{
+    width: 75%;
+}
+
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+
+.servicio .info p{
+    color: #6d6c6c;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.servicio:nth-child(odd) figure{ 
+    float:left;
+    margin:0 1em 0 0;
+}
+
+.servicio:nth-child(odd) .info{ 
+    float: right;
+}
+
+.servicio:nth-child(even) figure{ 
+    float:right;
+    margin:0 0 0 1em;
+}
+
+.servicio:nth-child(even) .info{
+    float: left;
+}
+@media screen and (min-width: 551px) and (max-width: 992px){
+    .servicio figure img{
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .servicio:nth-child(odd) figure{ 
+        float: left;
+        }
+        
+        .servicio:nth-child(odd) .info{ 
+        float: left;
+        }
+        
+        .servicio:nth-child(even) figure{ 
+        text-align: left;
+        }
+        
+        .servicio:nth-child(even) .info{
+            text-align: left;
+        }
+}
+@media screen and (min-width: 280px) and (max-width: 550px){
+    .servicio .info{
+        width: 100%;
+    }
+    .servicio figure img{
+        margin-bottom:15px;
+        margin-top: 0px;
+    }
+    .servicio:nth-child(odd) figure{ 
+    float: left;
+    }
+    
+    .servicio:nth-child(odd) .info{ 
+    float: left;
+    }
+    
+    .servicio:nth-child(even) figure{ 
+    text-align: center;
+    }
+    
+    .servicio:nth-child(even) .info{
+        text-align: left;
+    }
+}
+
+/*fin servicio*/

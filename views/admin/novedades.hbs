@@ -1,0 +1,58 @@
+<div class="container" style="margin:50px auto">
+
+    <div class="row">
+        <div class="col">
+            <p class="text-right saludo">Hola {{ usuario }}! <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar
+                    Sesión  <i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-7">
+            <h3 class="novedades">Listado de Novedades</h3>
+        </div>
+        <div class="col-2 text-right new">
+            <a href="/admin/novedades/agregar" class="btn  btn-success"><i class="fa fa-plus" aria-hidden="true"></i>
+                Nuevo</a>
+        </div>
+        <div class="col-3">
+            <form class="form-inline my-2 my-lg-0" action="/admin/novedades" method="get">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" {{#if q}} value="{{q}}" {{/if}}>
+                <button class="btn btn-secondary my-2 my-sm-0 search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col" class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{ id }}</th>
+                        <td>{{ titulo }}</td>
+                        <td class="text-center">
+                            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary"><i
+                                    class="fas fa-pen" aria-hidden="true"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i class="fa fa-trash"
+                                    aria-hidden="true"></i></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{#if is_search}}
+                {{#unless novedades.length}}
+                    No se encontraron resultados para <strong>"{{q}}"</strong>
+                {{/unless}}
+            {{/if}}    
+        </div>
+    </div>
+</div>

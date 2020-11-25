@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Transportes XS 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/servicio.css">
+  <link rel="stylesheet" href="/stylesheets/contacto.css">
+  <link rel="stylesheet" href="/stylesheets/galeria.css">
+  <link rel="stylesheet" href="/stylesheets/novedades.css">
+  <link rel="stylesheet" href="/stylesheets/index.css">
+  <link rel="stylesheet" href="/stylesheets/nosotros.css">
+<body>
+  <header>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Transportes XS</label>
+    <ul>
+        <li><a href="/" class="{{#if IsHome}} activo {{/if}}">Home</a></li>
+        <li><a href="/nosotros" class="{{#if IsNosotros}} activo {{/if}}">Nosotros</a></li>
+        <li><a href="/servicios" class="{{#if IsServicios}} activo {{/if}}">Servicios</a></li>
+        <li><a href="/galeria" class="{{#if IsGaleria}} activo {{/if}}">Galeria</a></li>
+        <li><a href="/novedades" class="{{#if IsNovedades}} activo {{/if}}">Novedades</a></li>
+        <li><a href="/contacto" class="{{#if IsContacto}} activo {{/if}}">Contacto</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  {{{body}}}
+  <footer>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <h3 class="title">LA COMPAÑIA</h3>
+        <p class="sub-title">TRANSPORTESXS es una empresa que diseña e implementa soluciones de logistica y transporte orientadas a satisfacer las necesidades de sus clientes.</p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <h3 class="title">CONTACTO</h3>
+        <p class="sub-title"> Avenida Collado, 082, 57º A, Bilzen
+        (Colectora Panamericana 1900)
+        <span class="info"><br>(01237) 452-967 <br> info@transportesxs.com.ar</span></p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <h3 class="title">SEGUINOS EN NUESTRAS REDES</h3>
+        <div class="sub-title">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fas fa-envelope"></i></a>
+    </div>
+    </div>
+    </div>
+    <div class="row" style="border-top: 1px solid #384653;padding: 15px 0 10px 0;">
+      <div class="col-12">
+      <p class="copyright">© 2020 TRANSPORTESXS - Todos los Derechos Reservados </p>
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
